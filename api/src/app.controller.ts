@@ -1,0 +1,13 @@
+import { Controller, Get } from '@nestjs/common';
+
+@Controller()
+export class AppController {
+  @Get()
+  getHello(): any {
+    return {
+      ok: true,
+      service: "taxi_api",
+      message: "API is running ✅",
+    };
+  }
+}
